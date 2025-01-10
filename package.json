@@ -1,0 +1,26 @@
+{
+  "name": "biblioteca_hipotetica",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/araujosemacento/biblioteca_hipotetica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/araujosemacento/biblioteca_hipotetica/issues"
+  },
+  "homepage": "https://github.com/araujosemacento/biblioteca_hipotetica#readme",
+  "dependencies": {
+    "biblioteca_hipotetica": "file:",
+    "dotenv": "^16.4.7",
+    "mysql2": "^3.12.0"
+  }
+}
