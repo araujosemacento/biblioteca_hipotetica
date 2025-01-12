@@ -20,7 +20,11 @@
   "homepage": "https://github.com/araujosemacento/biblioteca_hipotetica#readme",
   "dependencies": {
     "biblioteca_hipotetica": "file:",
+    "cheerio": "^1.0.0",
     "dotenv": "^16.4.7",
-    "mysql2": "^3.12.0"
+    "mysql2": "^3.12.0",
+    "puppeteer": "^24.0.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
   }
 }
