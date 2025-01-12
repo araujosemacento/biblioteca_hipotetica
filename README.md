@@ -18,7 +18,7 @@ Caso queira ignorar a sugestão anterior, é melhor saber pelo menos que, para r
 
     DB_USER='<Seu_Usuario>'
     DB_PASSWORD='<Sua_Senha>'
-    DB_ADDRESS='<Endereço_do_servidor>
+    DB_ADDRESS='<Endereço_do_servidor>'
     DB_NAME='Nome_da_Database'
 
 E por favor, não esqueça que se as chamadas que você está fazendo nunca são completadas, não importa o que você muda no código e sempre mostram um erro de dependência, você provavelmente esqueceu de executar o comando `npm i` ou `npm install -y` pra que todas as dependências, ou seja, todos os pacotes que o código utiliza pra funcionar sejam instalados antes de executá-lo.
@@ -26,11 +26,12 @@ E por favor, não esqueça que se as chamadas que você está fazendo nunca são
 ## Funcionalidades
 
 - Tentativa de facilitar o armazenamento das informações sobre usuários, categorias, autores, livros, reservas e empréstimos no banco de dados do projeto.
-- Funções feitas pra criar, ler (todos os itens, ou um item específicos), atualizar ou remover registros em cada uma das tabelas.
+- Funções feitas pra criar, ler (todos os itens, ou um item específico), atualizar ou remover registros em cada uma das tabelas.
 - Além disso, o código inclui o que acredito ser um modo eficiente de filtragem contra entradas exploradoras de vulnerabilidades, que "converte" caracteres especiais em caracteres de escape.
 
 ## Uso/Exemplos
 
+```javascript
     import puppeteer from 'puppeteer-extra';
     import StealthPlugin from 'puppeteer-extra-plugin-stealth';
     import * as cheerio from 'cheerio';
@@ -115,8 +116,9 @@ E por favor, não esqueça que se as chamadas que você está fazendo nunca são
     // Exemplo de uso:
     const url = 'https://acervo.bn.gov.br/Sophia_web/acervo/detalhe/1739805';
     console.log(await cadastrarLivroPelaURLDaBN(url));
+```
 
-Não vou mentir, eu tô com preguiça e não quero pensar em diferentes exemplos, então coloquei aqui o código que eu usei pra testar o funcionamento do meu código e como funcionou conforme o previsto, decidi que era um bom exemplo, talvez eu pense em algo melhor estruturado pra colocar aqui depois, mas sejamos francos, ninguém chegou a ler até aqui.
+Não vou mentir, eu tô com preguiça e não quero pensar em diferentes exemplos, então coloquei aqui o código que eu usei pra testar o funcionamento do meu código e como funcionou conforme o previsto, decidi que era um bom exemplo. Talvez eu pense em algo melhor estruturado pra colocar aqui depois, mas sejamos francos, ninguém chegou a ler até aqui.
 
 ## Stack utilizada
 
@@ -132,7 +134,7 @@ Não vou mentir, eu tô com preguiça e não quero pensar em diferentes exemplos
 
 ¯\\*(ツ)*/¯
 
-### Por que sequer fazer um Readme se tu sabe que ninguém vai ler isso aqui?
+### Por que sequer fazer um Readme se você sabe que ninguém vai ler isso aqui?
 
 Me deixa! Nunca fiz um Readme. Dessa vez, decidi que se eu tô fazendo um projeto tão nos trinques (sério me esforcei pra tentar deixar o código bonitinho e funcional, apesar de ser aquele desastre monolítico) ele merecia uma vitrine decente também.
 
