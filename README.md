@@ -26,10 +26,12 @@ Para além disso, esse repositório não teria sido possível sem a ajuda do rep
 
 Caso queira ignorar a sugestão anterior, é melhor saber pelo menos que, para rodar esse projeto você vai precisar criar um arquivo `.env`. As informações contidas nele não são salvas nos commits e isso é intencional, pra que cada pessoa que mexe no projeto possa acessar a database com suas próprias credenciais, afinal foi pra isso que eu criei elas... as variáveis de ambiente necessárias no seu arquivo .env são:
 
-    DB_USER='<Seu_Usuario>'
-    DB_PASSWORD='<Sua_Senha>'
-    DB_ADDRESS='<Endereço_do_servidor>'
-    DB_NAME='Nome_da_Database'
+```nodejs
+DB_USER='<Seu_Usuario>'
+DB_PASSWORD='<Sua_Senha>'
+DB_ADDRESS='<Endereço_do_Servidor>'
+DB_NAME='<Nome_da_Database>'
+```
 
 E por favor, não esqueça que se as chamadas que você está fazendo nunca são completadas, não importa o que você muda no código e sempre mostram um erro de dependência, você provavelmente esqueceu de executar o comando `npm i` ou `npm install -y` pra que todas as dependências, ou seja, todos os pacotes que o código utiliza pra funcionar sejam instalados antes de executá-lo.
 
