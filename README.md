@@ -3,6 +3,16 @@
 
 Um conjunto de funções que funcionam basicamente como um CRUD pra cada tabela documentada no projeto da minha equipe de banco de dados.
 
+## Acesso
+
+Para acessar o banco de dados, você precisará de um cliente MySQL e das credenciais de acesso. Ao abrir seu cliente MySQL, você deverá executar o seguinte comando:
+
+  ```sql
+  mysql -u <USER> -h <HOST_ADDRESS> -p
+  ```
+
+Onde `<USER>` é o seu usuário, `<HOST_ADDRESS>` é o endereço do servidor MySQL e `<SENHA>` é a senha do seu usuário, todas as credenciais de acesso devem ser solicitadas e/ou repassadas por um administrador. Caso não saiba que cliente utilizar, o [MySQL Workbench](https://www.mysql.com/products/workbench/) lhe permite acesso a servidores através de uma interface gráfica, além disso, caso pretenda utilizar as chamadas presentes em `database.js` de forma constante, visite a [seção Variáveis de Ambiente](#variáveis-de-ambiente) abaixo.
+
 ## Referenciação
 
 Os links abaixo levam a pacotes/bibliotecas que são essenciais pro uso e manipulação do código escrito, seria prudente olhar a ***Documentação*** de ambos(as), se não entender como algo funciona.
